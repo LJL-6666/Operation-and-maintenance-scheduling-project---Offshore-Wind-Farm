@@ -6,13 +6,18 @@
 
 研究相关论文，基于多码头多风电场情况，在python环境下使用Gurobi框架复现论文的优化模型，针对子问题每一个可行的计划规划出最间步长t为每个船v选择一个可行的路线，得到该计划时间周期内风机的维护时间安排表，其中还包含船和运维人员的时间安排，最终完善MILP和ILP结合的周运维模型。
 
+
 '''
 文件说明：
     外部直接通过from O_S_model import one2seven_model调用即可
+    
 注意：O_S_model.py不修改,直接调用
+
 输入:
     json数据
+    
 输出格式：
+
 "route":{
     "initial":[
         {
@@ -39,9 +44,11 @@
 研究相关论文，基于可靠性最高和妻用最低的目标函数，在python环境下使用Gurobi和Scip框架建立了海上风电场PM调度问题的多目标规划模型，完成月运维非支配排序遗传算法模型。
 
 Gurobi框架运行结果展示
+
 ![image](https://user-images.githubusercontent.com/60246446/114642318-5072d680-9d06-11eb-98c2-5be0a5239ee2.png)
 
 Scip框架运行结果展示
+
 ![image](https://user-images.githubusercontent.com/60246446/114642432-7dbf8480-9d06-11eb-98ec-7731bd8352cf.png)
 
 
@@ -50,5 +57,6 @@ Scip框架运行结果展示
 将测试好的算法部署到Linux服务器中运行，为海上风电大数据平台提供建模算法支持。
 
 部署结果展示
+
 ![image](https://user-images.githubusercontent.com/60246446/114642509-a47dbb00-9d06-11eb-85cb-78be33335bde.png)
 
