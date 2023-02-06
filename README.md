@@ -62,7 +62,8 @@ Scip框架运行结果展示
 ### 接通前后端
 
 编写Flask web框架来请求服务，实现前端输入数据存储到数据库，算法从数据库调用并计算出结果输出到前端大数据平台页面。
-文件请见 all.py
+文件请见 https://github.com/LJL-6666/Operation-and-maintenance-scheduling-project---Offshore-Wind-Farm/blob/main/all.py
+
 
 ### 运维
 
